@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+}
+
+header .container .personal-logo {
+    width: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header .container .personal-logo img {
+    width: 100%;
+}
+
+header .container nav {
+    width: 57%;
+}
+
+header .container nav .personal-list {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    justify-content: center;
+    width: 100%;
+}
+
+header .container nav .personal-list li {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+header .container nav .personal-list li a {
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 12px;
+    color: rgb(34, 34, 34);
+    font-family: Poppins, sans-serif;
+}
+
+header .container nav .personal-list li a i {
+    font-size: 12px;
+}
+
+header .container nav .personal-list li a:hover {
+    color: rgb(132, 144, 255);
+    transition: 0.4s ease;
+}
+
+header .container nav .personal-list .blogList .blog {
+    position: relative;
+}
+
+.blog-list {
+    display: none;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 43px;
+    padding: 15px;
+}
+
+
+header .container nav .personal-list .blogList:hover .blog-list {
+    display: block;
+}
+
+
+
+
+
+
+
+
+
+header .container nav .personal-list .pagesList .pages {
+    position: relative;
+}
+
+.pages-list {
+    display: none;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 43px;
+    padding: 15px;
+}
+
+
+header .container nav .personal-list .pagesList:hover .pages-list {
+    display: block;
+}
+
+
+
+
+
+.level {
+    position: relative;
+}
+
+.level:hover + .level-list-container {
+    display: block;
+  
+}
+
+.level-list-container {
+    display: none;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 40px;
+    width: 100px;
+    padding: 10px;
+    right: 85px;
+    
+}
+
+
